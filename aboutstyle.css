@@ -11,9 +11,11 @@ body {
   color: white;
   margin: 0;
   padding: 0;
+  flex-direction: column;
 }
 p {
   margin: 0;
+  padding: 0;
 }
 .top-bar {
   display: flex;
@@ -23,7 +25,7 @@ p {
 .name {
   display: flex;
   align-items: center;
-  font-size: 26px;
+  font-size: 28px;
   width: 100%;
   user-select: none;
 }
@@ -82,4 +84,16 @@ p {
   
 .open-menu:hover {
   background-color: rgb(18, 18, 18);
+}
+
+.description {
+  font-size: 20px;
+  padding-inline: 13%;
+  text-align: center;
+}
+
+@media (max-width: 700px) {
+  .description {
+    font-size: 20px;
+  }
 }
