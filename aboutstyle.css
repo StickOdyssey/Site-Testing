@@ -78,13 +78,13 @@ p {
   
   /* Style the button that is used to open the sidepanel */
 .open-menu {
-  font-size: 30px;
   cursor: pointer;
   color: white;
   background-color: transparent;
-  padding: 10px 15px;
+  padding-inline: 20px;
   border: none;
   user-select: none;
+  margin: 0px;
 }
   
 .open-menu:hover {
@@ -93,7 +93,7 @@ p {
 #glowLight {
   height: 80px;
   background: linear-gradient(rgba(0, 64, 148, 0.5) 0%, transparent 80%);
-  animation: gradientChange 0.5s ease-out;
+  animation: gradientChange 0.75s ease-in-out;
 }
 @keyframes gradientChange {
   0% {
