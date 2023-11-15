@@ -23,7 +23,7 @@ p {
 .name {
   display: flex;
   align-items: center;
-  font-size: 26px;
+  font-size: 28px;
   width: 100%;
   user-select: none;
 }
@@ -33,7 +33,7 @@ p {
 }
 /* The sidepanel menu */
 .sidepanel {
-  height: auto; /* Specify a height */
+  height: 100%; /* Specify a height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
@@ -78,6 +78,7 @@ p {
   background-color: transparent;
   padding: 10px 15px;
   border: none;
+  user-select: none;
 }
   
 .open-menu:hover {
