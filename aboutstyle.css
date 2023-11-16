@@ -9,8 +9,12 @@ html {
   font-family: Ubuntu-Regular;
   src: url(Ubuntu-Regular.ttf);
 }
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(Ubuntu-Light.ttf);
+}
 body {
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(21,21,21);
   display: flex;
   color: white;
   margin: 0;
@@ -25,16 +29,18 @@ p {
   display: flex;
   width: 100%;
   background-color: black;
+  border-bottom: rgb(119, 155, 255);
+  border-bottom-style: solid;
+  animation: borderChange 1s ease-in-out;
 }
 .name {
   display: flex;
   align-items: center;
-  font-size: 28px;
-  width: 100%;
+  font-size: 32px;
   user-select: none;
 }
 .name img {
-  height: 50px;
+  height: 60px;
   padding: 10px;
 }
 /* The sidepanel menu */
@@ -50,6 +56,8 @@ p {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   padding-bottom: 100%;
+  border-right: rgb(119, 155, 255) solid;
+  border-right-width: 0px;
 }
   
   /* The sidepanel links */
@@ -88,7 +96,7 @@ p {
 }
   
 .open-menu:hover {
-  background-color: rgb(18, 18, 18);
+  background-color: rgba(0, 64, 148, 0.5);
 }
 #glowLight {
   height: 80px;
@@ -97,66 +105,50 @@ p {
 }
 @keyframes gradientChange {
   0% {
-    background: linear-gradient(rgba(0, 64, 148, 0) 0%, transparent 80%);
-  }
-  6.25% {
-    background: linear-gradient(rgba(0, 64, 148, 0.03125) 0%, transparent 80%);
-  }
-  12.5% {
-    background: linear-gradient(rgba(0, 64, 148, 0.0625) 0%, transparent 80%);
-  }
-  18.75% {
-    background: linear-gradient(rgba(0, 64, 148, 0.09375) 0%, transparent 80%);
-  }
-  25% {
-    background: linear-gradient(rgba(0, 64, 148, 0.125) 0%, transparent 80%);
-  }
-  31.25% {
-    background: linear-gradient(rgba(0, 64, 148, 0.15625) 0%, transparent 80%);
-  }
-  37.5% {
-    background: linear-gradient(rgba(0, 64, 148, 0.1875) 0%, transparent 80%);
-  }
-  43.75% {
-    background: linear-gradient(rgba(0, 64, 148, 0.21875) 0%, transparent 80%);
-  }
-  50% {
-    background: linear-gradient(rgba(0, 64, 148, 0.25) 0%, transparent 80%);
-  }
-  56.25% {
-    background: linear-gradient(rgba(0, 64, 148, 0.28125) 0%, transparent 80%);
-  }
-  62.5% {
-    background: linear-gradient(rgba(0, 64, 148, 0.3125) 0%, transparent 80%);
-  }
-  68.75% {
-    background: linear-gradient(rgba(0, 64, 148, 0.34375) 0%, transparent 80%);
-  }
-  75% {
-    background: linear-gradient(rgba(0, 64, 148, 0.375) 0%, transparent 80%);
-  }
-  81.25% {
-    background: linear-gradient(rgba(0, 64, 148, 0.40625) 0%, transparent 80%);
-  }
-  87.5% {
-    background: linear-gradient(rgba(0, 64, 148, 0.4375) 0%, transparent 80%);
-  }
-  93.75% {
-    background: linear-gradient(rgba(0, 64, 148, 0.46875) 0%, transparent 80%);
+    opacity: 0;
   }
   100% {
-    background: linear-gradient(rgba(0, 64, 148, 0.5) 0%, transparent 80%);
+    opacity: 1;
+  }
+}
+@keyframes borderChange {
+  0% {
+    border-color: rgb(75, 75, 75);
+  }
+  100% {
+    border-color: rgb(119, 155, 255);
   }
 }
 .description {
-  font-size: 30px;
-  padding-inline: 13%;
+  width: auto;
+  font-size: 35px;
+  margin-inline: 20%;
   text-align: center;
+  margin-top: 5%;
   font-family: Ubuntu-Regular;
+  text-shadow: 0px 0px 10px rgb(0, 110, 255);
+  color: white;
+  animation: shadowChange 0.75s ease-in-out;
 }
-
+@keyframes shadowChange {
+  0% {
+    text-shadow: 0px 0px 0px rgba(0, 110, 255, 0);
+    color: rgb(75, 75, 75);
+  }
+  100% {
+    text-shadow: 0px 0px 10px rgb(0, 110, 255);
+    color: white;
+  }
+}
 @media (max-width: 700px) {
+  .name {
+    font-size: 26px;
+  }
+  .name img {
+    height: 50px;
+  }
   .description {
-    font-size: 20px;
+    font-size: 24px;
+    margin-inline: 10%;
   }
 }

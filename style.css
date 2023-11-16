@@ -1,24 +1,33 @@
 html {
-  font-family: Ubuntu;
+  font-family: Ubuntu-Bold;
 }
 @font-face {
-  font-family: Ubuntu;
+  font-family: Ubuntu-Bold;
   src: url(Ubuntu-Bold.ttf);
 }
+@font-face {
+  font-family: Ubuntu-Regular;
+  src: url(Ubuntu-Regular.ttf);
+}
 body {
-  background-color: rgb(18, 18, 18);
+  background-color: rgb(21,21,21);
   display: flex;
   color: white;
   margin: 0;
   padding: 0;
+  flex-direction: column;
 }
 p {
   margin: 0;
+  padding: 0;
 }
 .top-bar {
   display: flex;
   width: 100%;
   background-color: black;
+  border-bottom: rgb(119, 155, 255);
+  border-bottom-style: solid;
+  animation: borderChange 1s ease-in-out;
 }
 .name {
   display: flex;
@@ -28,7 +37,7 @@ p {
   user-select: none;
 }
 .name img {
-  height: 50px;
+  height: 60px;
   padding: 10px;
 }
 /* The sidepanel menu */
@@ -44,6 +53,8 @@ p {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   padding-bottom: 100%;
+  border-right: rgb(119, 155, 255) solid;
+  border-right-width: 0px;
 }
   
   /* The sidepanel links */
@@ -70,7 +81,7 @@ p {
   margin-left: 50px;
 }
   
-/* Style the button that is used to open the sidepanel */
+  /* Style the button that is used to open the sidepanel */
 .open-menu {
   cursor: pointer;
   color: white;
@@ -82,5 +93,35 @@ p {
 }
   
 .open-menu:hover {
-  background-color: rgb(18, 18, 18);
+  background-color: rgba(0, 64, 148, 0.5);
+}
+#glowLight {
+  height: 80px;
+  background: linear-gradient(rgba(0, 64, 148, 0.5) 0%, transparent 80%);
+  animation: gradientChange 1s ease-in-out;
+}
+@keyframes gradientChange {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes borderChange {
+  0% {
+    border-color: rgba(119, 155, 255, 0);
+  }
+  100% {
+    border-color: rgb(119, 155, 255);
+  }
+}
+
+@media (max-width: 700px) {
+  .name {
+    font-size: 26px;
+  }
+  .name img {
+    height: 50px;
+  }
 }
