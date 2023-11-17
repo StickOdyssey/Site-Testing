@@ -9,6 +9,10 @@ html {
   font-family: Ubuntu-Regular;
   src: url(Ubuntu-Regular.ttf);
 }
+@font-face {
+  font-family: Ubuntu-Light;
+  src: url(Ubuntu-Light.ttf);
+}
 body {
   background-color: rgb(21,21,21);
   display: flex;
@@ -32,8 +36,7 @@ p {
 .name {
   display: flex;
   align-items: center;
-  font-size: 28px;
-  width: 100%;
+  font-size: 32px;
   user-select: none;
 }
 .name img {
@@ -98,7 +101,7 @@ p {
 #glowLight {
   height: 80px;
   background: linear-gradient(rgba(0, 64, 148, 0.5) 0%, transparent 80%);
-  animation: gradientChange 1s ease-in-out;
+  animation: gradientChange 0.75s ease-in-out;
 }
 @keyframes gradientChange {
   0% {
@@ -108,15 +111,6 @@ p {
     opacity: 1;
   }
 }
-@keyframes borderChange {
-  0% {
-    border-color: rgba(119, 155, 255, 0);
-  }
-  100% {
-    border-color: rgb(119, 155, 255);
-  }
-}
-
 @media (max-width: 700px) {
   .name {
     font-size: 26px;

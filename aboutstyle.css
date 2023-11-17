@@ -122,9 +122,8 @@ p {
 .description {
   width: auto;
   font-size: 35px;
-  margin-inline: 20%;
-  text-align: center;
-  margin-top: 5%;
+  padding-inline: 20%;
+  padding-block: 10%;
   font-family: Ubuntu-Regular;
   text-shadow: 0px 0px 10px rgb(0, 110, 255);
   color: white;
@@ -140,6 +139,17 @@ p {
     color: white;
   }
 }
+.team {
+  width: 100%; height: auto;
+}
+.team-title {
+  font-family: Ubuntu-Regular;
+  font-size: 55px;
+  text-align: center;
+  text-shadow: 0px 0px 10px rgb(0, 110, 255);
+  color: white;
+  animation: shadowChange 0.75s ease-in-out;
+}
 @media (max-width: 700px) {
   .name {
     font-size: 26px;
@@ -148,7 +158,11 @@ p {
     height: 50px;
   }
   .description {
-    font-size: 24px;
-    margin-inline: 10%;
+    font-size: 26px;
+    padding-inline: 10%;
+    background-color: rgb(0, 13, 129);
+  }
+  .team-title {
+    font-size: 35px;
   }
 }
