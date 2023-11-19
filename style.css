@@ -29,18 +29,18 @@ p {
   display: flex;
   width: 100%;
   background-color: black;
-  border-bottom: rgb(119, 155, 255);
+  border-bottom: white;
   border-bottom-style: solid;
   animation: borderChange 1s ease-in-out;
 }
 .name {
   display: flex;
   align-items: center;
-  font-size: 32px;
+  font-size: 30px;
   user-select: none;
 }
 .name img {
-  height: 60px;
+  height: 80px;
   padding: 10px;
 }
 /* The sidepanel menu */
@@ -56,7 +56,6 @@ p {
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidepanel */
   padding-bottom: 100%;
-  border-right: rgb(119, 155, 255) solid;
   border-right-width: 0px;
 }
   
@@ -109,6 +108,14 @@ p {
   }
   100% {
     opacity: 1;
+  }
+}
+@keyframes borderChange {
+  0% {
+    border-color: rgb(75, 75, 75);
+  }
+  100% {
+    border-color: white;
   }
 }
 @media (max-width: 700px) {
