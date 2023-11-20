@@ -97,7 +97,7 @@ p {
 .open-menu:hover {
   background-color: rgba(0, 64, 148, 0.5);
 }
-#glowLight {
+.glow-light {
   height: 80px;
   background: linear-gradient(rgba(0, 64, 148, 0.5) 0%, transparent 80%);
   animation: gradientChange 0.75s ease-in-out;
@@ -116,6 +116,38 @@ p {
   }
   100% {
     border-color: white;
+  }
+}
+.footer {
+  background-color: black;
+  border-top: white solid;
+  animation: borderChange 1s ease-in-out;
+  display: flex;
+  justify-content: center;
+}
+.rss-socials {
+  margin: 10px;
+}
+.rss-socials img {
+  width: 50px;
+  margin: 5px;
+  transition: 0.3s;
+}
+.rss-socials img:hover {
+  transform: scale(1.125);
+}
+.glow-light-2 {
+  height: 80px;
+  background: linear-gradient(0turn, rgba(0, 64, 148, 0.5) 0%, transparent 80%);
+  animation: gradientChange2 0.75s ease-in-out;
+  margin-top: 100%;
+}
+@keyframes gradientChange2 {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }
 @media (max-width: 700px) {
