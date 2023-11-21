@@ -29,6 +29,7 @@ p {
   display: flex;
   width: 100%;
   background-color: black;
+  justify-content: space-between;
   border-bottom: white;
   border-bottom-style: solid;
   animation: borderChange 1s ease-in-out;
@@ -50,7 +51,7 @@ p {
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  left: 0;
+  right: 0;
   background-color: #000000; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
@@ -227,10 +228,11 @@ p {
   border-top: white solid;
   animation: borderChange 1s ease-in-out;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
 }
 .rss-socials {
   margin: 10px;
+  display: flex;
 }
 .rss-socials img {
   width: 50px;
@@ -244,6 +246,14 @@ p {
   height: 80px;
   background: linear-gradient(0turn, rgba(0, 64, 148, 0.5) 0%, transparent 80%);
   animation: gradientChange2 0.75s ease-in-out;
+}
+.copyright {
+  display: flex;
+  align-items: center;
+  padding-inline: 10px;
+}
+.copyright p {
+  margin: 0;
 }
 @keyframes gradientChange2 {
   0% {
