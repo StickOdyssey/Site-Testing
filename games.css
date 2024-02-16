@@ -22,10 +22,6 @@ body {
   flex-direction: column;
   min-height: 100vh;
 }
-.body-light-mode {
-  background-color: rgb(234,234,234);
-  color:black;
-}
 p {
   margin: 0;
   padding: 0;
@@ -88,6 +84,7 @@ p {
   font-size: 36px;
   margin-left: 50px;
 }
+  
   /* Style the button that is used to open the sidepanel */
 .open-menu {
   cursor: pointer;
@@ -124,13 +121,12 @@ p {
     border-color: white;
   }
 }
-.description {
+.sad {
   width: auto;
-  font-size: 35px;
-  padding-inline: 8%;
-  padding-top: 8%;
-  padding-bottom: 14%;
+  margin-top: auto;
+  font-size: 60px;
   font-family: Ubuntu-Regular;
+  text-align: center;
   text-shadow: 0px 0px 11px rgb(0, 110, 255);
   color: white;
   animation: shadowChange 0.75s ease-in-out;
@@ -145,103 +141,29 @@ p {
     color: white;
   }
 }
-@keyframes blueChange {
-  0% {
-    text-shadow: 0px 0px 0px rgba(0, 110, 255, 0);
-    color: rgb(75, 75, 75);
-  }
-  100% {
-    text-shadow: 0px 0px 10px rgb(0, 110, 255);
-    color: rgb(119, 155, 255);
-  }
-}
-.team {
-  width: 100%; height: auto;
-  margin-bottom: 10%;
-}
-.team-title {
-  margin-top: 1%;
-  font-family: Ubuntu-Regular;
-  font-size: 65px;
-  text-align: center;
-  text-shadow: 0px 0px 21px rgb(0, 110, 255);
-  color: white;
-  animation: shadowChange 0.75s ease-in-out;
-}
-.team-container {
+.games-container {
+  background-color: blue;
   padding-inline: 2.5%;
   padding-block: 2.5%;
-  display: flex;
   gap: 2.5%;
-  justify-content: center;
-}
-.team-member {
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  text-align: center;
-  padding-bottom: 2.5%;
-  background-color: black;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 33%;
-}
-.member-image {
-  width: 100%;
-}
-.member-image img {
-  width: 100%;
-}
-.member-header {
-  width: 100%;
-  padding-top: 5%;
   display: flex;
   align-items: center;
+  flex-direction: column;
 }
-.member-name {
-  font-family: Ubuntu-Regular;
-  margin: 0;
-  margin-left: 5%;
-  margin-right: auto;
-  font-size: 28px;
-  text-shadow: 0px 0px 9px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
+.game {
+  background-color: black;
+  width: 100%;
+  height: 100%;
 }
-.member-quote {
-  margin-right: 5%;
-  font-size: 20px;
-  text-shadow: 0px 0px 6.5px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
+.game-separator {
+  height: 25px;
 }
-.member-title {
-  font-family: Ubuntu-Regular;
-  margin: 0;
-  margin-top: 5%;
-  margin-left: 5%;
-  font-size: 40px;
-  text-shadow: 0px 0px 12px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
+.game-image {
+  width: 0%;
+  height: 0%;
 }
-.member-social {
-  font-family: Ubuntu-Regular;
-  font-size: 20px;
-  margin: 0;
-  margin-left: 5%;
-}
-.member-email {
-  font-family: Ubuntu-Regular;
-  font-size: 20px;
-  margin: 0;
-  margin-left: 5%;
-  text-shadow: 0px 0px 6.5px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
-}
-.member-social a {
-  text-decoration: none;
-  text-decoration-color: rgb(119, 155, 255);
-  color: rgb(119, 155, 255);
-  text-shadow: 0px 0px 6.5px rgb(0, 110, 255);
-  animation: blueChange 0.75s ease-in-out;
+footer {
+  margin-top: auto;
 }
 .footer {
   height: 80px;
@@ -290,15 +212,5 @@ p {
   }
   .name img {
     height: 50px;
-  }
-  .description {
-    font-size: 26px;
-    padding-inline: 10%;
-  }
-  .team-title {
-    font-size: 35px;
-  }
-  .team-container {
-    grid-template-columns: repeat(auto-fill, minmax(10px, 100%));
   }
 }
