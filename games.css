@@ -149,7 +149,6 @@ p {
 .game-info {
   height: 100%;
   width: 100%;
-  padding-bottom: 150px;
 }
 .game-header {
   display: flex;
@@ -157,8 +156,8 @@ p {
 }
 .game-name {
   font-family: Ubuntu-Regular;
-  font-size: 28px;
-  text-shadow: 0px 0px 9px rgb(0, 110, 255);
+  font-size: 36px;
+  text-shadow: 0px 0px 11px rgb(0, 110, 255);
   animation: shadowChange 0.75s ease-in-out;
   margin-left: 1.25%;
 }
@@ -168,7 +167,8 @@ p {
 }
 .game-discription {
   text-align: start;
-  margin-left: 1.25%;
+  margin-inline: 1.25%;
+  font-size: 20px;
 }
 @keyframes shadowChange {
   0% {
