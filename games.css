@@ -121,88 +121,51 @@ p {
     border-color: white;
   }
 }
-.team-container {
+.games-container {
   padding-inline: 2.5%;
   padding-block: 2.5%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   gap: 2.5%;
   justify-content: center;
   background-color: blue;
 }
-.team-member {
+.game {
   display: flex;
   flex-direction: row;
   align-items:start;
   text-align: center;
-  padding-bottom: 2.5%;
   background-color: black;
   border-radius: 10px;
   overflow: hidden;
-  height: 33%;
-}
-.member-image {
-  height: 100%;
-  background-color: red;
-}
-.member-image img {
-  height: 100%;
-}
-.member-header {
   width: 100%;
   height: 100%;
-  display: flex;
-  align-items: center;
-  background-color: purple;
 }
-.member-name {
+.game-image {
+  height: 200px;
+}
+.game-image img {
+  height: 100%;
+}
+.game-info {
+  height: 100%;
+  width: 100%;
+  background-color: green;
+}
+.game-header {
+  background-color: purple;
+  display: flex;
+  flex-direction: row;
+}
+.game-name {
   font-family: Ubuntu-Regular;
-  margin: 0;
-  margin-left: 5%;
-  margin-right: auto;
   font-size: 28px;
   text-shadow: 0px 0px 9px rgb(0, 110, 255);
   animation: shadowChange 0.75s ease-in-out;
 }
-.member-title {
-  font-family: Ubuntu-Regular;
-  margin: 0;
-  margin-top: 5%;
-  margin-left: 5%;
-  font-size: 40px;
-  text-shadow: 0px 0px 12px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
-}
-.member-social {
-  font-family: Ubuntu-Regular;
-  font-size: 20px;
-  margin: 0;
-  margin-left: 5%;
-}
-.member-email {
-  font-family: Ubuntu-Regular;
-  font-size: 20px;
-  margin: 0;
-  margin-left: 5%;
-  text-shadow: 0px 0px 6.5px rgb(0, 110, 255);
-  animation: shadowChange 0.75s ease-in-out;
-}
-.member-social a {
-  text-decoration: none;
-  text-decoration-color: rgb(119, 155, 255);
-  color: rgb(119, 155, 255);
-  text-shadow: 0px 0px 6.5px rgb(0, 110, 255);
-  animation: blueChange 0.75s ease-in-out;
-}
-.sad {
-  width: auto;
-  margin-top: auto;
-  font-size: 60px;
-  font-family: Ubuntu-Regular;
-  text-align: center;
-  text-shadow: 0px 0px 11px rgb(0, 110, 255);
+.game-name a {
   color: white;
-  animation: shadowChange 0.75s ease-in-out;
+  text-decoration: none;
 }
 @keyframes shadowChange {
   0% {
@@ -213,34 +176,6 @@ p {
     text-shadow: 0px 0px 10px rgb(0, 110, 255);
     color: white;
   }
-}
-.games-container {
-  background-color: blue;
-  padding-inline: 2.5%;
-  padding-block: 2.5%;
-  gap: 2.5%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  height: auto;
-}
-.game {
-  display: flex;
-  flex-direction: column;
-  align-items:start;
-  text-align: center;
-  background-color: black;
-  border-radius: 10px;
-  overflow: hidden;
-  width: 100%;
-  height: 100%;
-}
-.game-separator {
-  height: 25px;
-}
-.game-image {
-  width: 0%;
-  height: 0%;
 }
 footer {
   margin-top: auto;
