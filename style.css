@@ -42,7 +42,7 @@ p {
 .name {
   display: flex;
   align-items: center;
-  font-size: 35px;
+  font-size: 30pt;
   user-select: none;
 }
 .name img {
